@@ -51,12 +51,13 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="relative h-[40vh] flex items-center">
-        <div class="absolute inset-0 bg-black/50 z-10"></div>
+    <section class="relative h-[50vh] flex items-center bg-gradient-to-br from-red-700/80 to-black/80">
+        <div class="absolute inset-0 bg-black/60 z-10"></div>
         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1513104890138-7c749659a591')] bg-cover bg-center"></div>
-        <div class="container mx-auto px-4 relative z-20 text-white">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Menu</h1>
-            <p class="text-xl">Authentic Italian flavors at their finest</p>
+        <div class="container mx-auto px-4 relative z-20 text-white flex flex-col items-start justify-center h-full">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Our Menu</h1>
+            <p class="text-2xl mb-8 font-light drop-shadow">Authentic Italian flavors at their finest</p>
+            <a href="#pizza" class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-full font-semibold shadow-lg transition">Order Now</a>
         </div>
     </section>
 
@@ -64,21 +65,21 @@
     <div class="container mx-auto px-4 py-12">
         <!-- Appetizers -->
         <section id="appetizers" class="mb-16">
-            <h2 class="text-3xl font-bold mb-8">Appetizers</h2>
+            <h2 class="text-4xl font-extrabold mb-8 text-red-700">Appetizers</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">Fries</h3>
-                    <p class="text-gray-600 mb-2">$3.49</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">Fries</h3>
+                    <p class="text-gray-700 mb-2 text-lg">$3.49</p>
                     <p class="text-sm text-gray-500">Add Cheese +$0.75, Jalapenos +$0.50, Bacon +$0.99</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">Loaded Fries</h3>
-                    <p class="text-gray-600 mb-2">$5.99</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">Loaded Fries</h3>
+                    <p class="text-gray-700 mb-2 text-lg">$5.99</p>
                     <p class="text-sm text-gray-500">Baked fries with cheddar cheese, Jalapenos & Bacon</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">Cheese Bread</h3>
-                    <p class="text-gray-600 mb-2">$6.99</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">Cheese Bread</h3>
+                    <p class="text-gray-700 mb-2 text-lg">$6.99</p>
                     <p class="text-sm text-gray-500">Oven-baked dough covered in garlic sauce and topped with mozzarella</p>
                 </div>
             </div>
@@ -86,74 +87,74 @@
 
         <!-- Wings -->
         <section id="wings" class="mb-16">
-            <h2 class="text-3xl font-bold mb-8">Wings</h2>
+            <h2 class="text-4xl font-extrabold mb-8 text-red-700">Wings</h2>
             <p class="text-gray-600 mb-6">Regular or Boneless. Oven Baked wings tossed in your choice of sauce: Insane, Hot, Medium, BBQ, Chipotle BBQ, Garlic Parmesan, Old Bay, Mango Habanero, Sweet Thai chili, Honey Lemon Pepper & Lemon Pepper Rub.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">8PC Wings</h3>
-                    <p class="text-gray-600">$10.99</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">8PC Wings</h3>
+                    <p class="text-gray-700 text-lg">$10.99</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">16PC Wings</h3>
-                    <p class="text-gray-600">$20.99</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">16PC Wings</h3>
+                    <p class="text-gray-700 text-lg">$20.99</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">24PC Wings</h3>
-                    <p class="text-gray-600">$30.99</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">24PC Wings</h3>
+                    <p class="text-gray-700 text-lg">$30.99</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">50PC Wings</h3>
-                    <p class="text-gray-600">$60.99</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">50PC Wings</h3>
+                    <p class="text-gray-700 text-lg">$60.99</p>
                 </div>
             </div>
         </section>
 
         <!-- Pizza -->
         <section id="pizza" class="mb-16">
-            <h2 class="text-3xl font-bold mb-8">Gourmet Pizza</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002" alt="Margherita Pizza" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Margherita</h3>
-                        <p class="text-gray-600 mb-2">Red sauce, tomato, basil</p>
-                        <div class="space-y-1">
+            <h2 class="text-4xl font-extrabold mb-8 text-red-700">Gourmet Pizza</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="menu-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002" alt="Margherita Pizza" class="w-full h-40 object-cover rounded-t-2xl">
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">Margherita</h3>
+                        <p class="text-gray-700 mb-2">Red sauce, tomato, basil</p>
+                        <div class="space-y-1 mt-auto">
                             <p class="text-sm">12" - $13.49</p>
                             <p class="text-sm">14" - $17.49</p>
                             <p class="text-sm">16" - $20.49</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3" alt="Supreme Pizza" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Supreme</h3>
-                        <p class="text-gray-600 mb-2">Pepperoni, sausage, ham, ground beef, green peppers, black olives, mushrooms, onions, bacon</p>
-                        <div class="space-y-1">
+                <div class="menu-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3" alt="Supreme Pizza" class="w-full h-40 object-cover rounded-t-2xl">
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">Supreme</h3>
+                        <p class="text-gray-700 mb-2">Pepperoni, sausage, ham, ground beef, green peppers, black olives, mushrooms, onions, bacon</p>
+                        <div class="space-y-1 mt-auto">
                             <p class="text-sm">12" - $13.49</p>
                             <p class="text-sm">14" - $17.49</p>
                             <p class="text-sm">16" - $20.49</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1594007654729-407eedc660be" alt="Veggie Lovers Pizza" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Veggie Lovers</h3>
-                        <p class="text-gray-600 mb-2">Mushroom, green peppers, onions, black olives, diced tomatoes</p>
-                        <div class="space-y-1">
+                <div class="menu-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1594007654729-407eedc660be" alt="Veggie Lovers Pizza" class="w-full h-40 object-cover rounded-t-2xl">
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">Veggie Lovers</h3>
+                        <p class="text-gray-700 mb-2">Mushroom, green peppers, onions, black olives, diced tomatoes</p>
+                        <div class="space-y-1 mt-auto">
                             <p class="text-sm">12" - $13.49</p>
                             <p class="text-sm">14" - $17.49</p>
                             <p class="text-sm">16" - $20.49</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Hawaiian Pizza" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Hawaiian</h3>
-                        <p class="text-gray-600 mb-2">Ham, pineapple, pizza sauce</p>
-                        <div class="space-y-1">
+                <div class="menu-card bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Hawaiian Pizza" class="w-full h-40 object-cover rounded-t-2xl">
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-bold mb-2">Hawaiian</h3>
+                        <p class="text-gray-700 mb-2">Ham, pineapple, pizza sauce</p>
+                        <div class="space-y-1 mt-auto">
                             <p class="text-sm">12" - $13.49</p>
                             <p class="text-sm">14" - $17.49</p>
                             <p class="text-sm">16" - $20.49</p>
@@ -165,19 +166,19 @@
 
         <!-- Pasta -->
         <section id="pasta" class="mb-16">
-            <h2 class="text-3xl font-bold mb-8">Pasta</h2>
+            <h2 class="text-4xl font-extrabold mb-8 text-red-700">Pasta</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">Manicotti with Marinara</h3>
-                    <p class="text-gray-600">$8.99</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">Manicotti with Marinara</h3>
+                    <p class="text-gray-700 text-lg">$8.99</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">Ravioli with Marinara</h3>
-                    <p class="text-gray-600">$8.99</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">Ravioli with Marinara</h3>
+                    <p class="text-gray-700 text-lg">$8.99</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">Chicken Carbonara</h3>
-                    <p class="text-gray-600">$9.99</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">Chicken Carbonara</h3>
+                    <p class="text-gray-700 text-lg">$9.99</p>
                     <p class="text-sm text-gray-500">Penne, bacon, chicken, onions, mushrooms and spinach</p>
                 </div>
             </div>
@@ -185,34 +186,34 @@
 
         <!-- Desserts -->
         <section id="desserts" class="mb-16">
-            <h2 class="text-3xl font-bold mb-8">Desserts</h2>
+            <h2 class="text-4xl font-extrabold mb-8 text-red-700">Desserts</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">Cannoli</h3>
-                    <p class="text-gray-600">1 pc $3.49 | 2 pc $6.49</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">Cannoli</h3>
+                    <p class="text-gray-700 text-lg">1 pc $3.49 | 2 pc $6.49</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">Brownie</h3>
-                    <p class="text-gray-600">1 pc $2.99 | 2 pc $5.49</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">Brownie</h3>
+                    <p class="text-gray-700 text-lg">1 pc $2.99 | 2 pc $5.49</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">Tiramisu</h3>
-                    <p class="text-gray-600">1 pc $4.49 | 2 pc $8.49</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">Tiramisu</h3>
+                    <p class="text-gray-700 text-lg">1 pc $4.49 | 2 pc $8.49</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">Chocolate Cookie</h3>
-                    <p class="text-gray-600">1 pc $2.49 | 2 pc $3.99</p>
+                <div class="menu-card bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl transition">
+                    <h3 class="text-2xl font-bold mb-2">Chocolate Cookie</h3>
+                    <p class="text-gray-700 text-lg">1 pc $2.49 | 2 pc $3.99</p>
                 </div>
             </div>
         </section>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-900 text-white py-12 border-t border-red-700">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Five Bros Pizza</h3>
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-pizza-slice text-red-500"></i> Five Bros Pizza</h3>
                     <p class="text-gray-400">Serving authentic Italian pizza since 1990</p>
                 </div>
                 <div>
@@ -225,9 +226,17 @@
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Opening Hours</h3>
-                    <p class="text-gray-400">Monday - Friday: 11am - 10pm</p>
-                    <p class="text-gray-400">Saturday - Sunday: 12pm - 11pm</p>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mt-2">
+                        <a href="#" class="text-gray-400 hover:text-white social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-semibold">Opening Hours</h4>
+                        <p class="text-gray-400">Mon-Fri: 11am - 10pm</p>
+                        <p class="text-gray-400">Sat-Sun: 12pm - 11pm</p>
+                    </div>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
