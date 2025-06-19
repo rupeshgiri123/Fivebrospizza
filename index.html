@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Bros Pizza - Menu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Poppins] bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-md z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-red-600">Five Bros Pizza</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#appetizers" class="text-gray-700 hover:text-red-600 transition">Appetizers</a>
+                    <a href="#wings" class="text-gray-700 hover:text-red-600 transition">Wings</a>
+                    <a href="#pizza" class="text-gray-700 hover:text-red-600 transition">Pizza</a>
+                    <a href="#pasta" class="text-gray-700 hover:text-red-600 transition">Pasta</a>
+                    <a href="#desserts" class="text-gray-700 hover:text-red-600 transition">Desserts</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <a href="#appetizers" class="block py-2 text-gray-700 hover:text-red-600 transition">Appetizers</a>
+            <a href="#wings" class="block py-2 text-gray-700 hover:text-red-600 transition">Wings</a>
+            <a href="#pizza" class="block py-2 text-gray-700 hover:text-red-600 transition">Pizza</a>
+            <a href="#pasta" class="block py-2 text-gray-700 hover:text-red-600 transition">Pasta</a>
+            <a href="#desserts" class="block py-2 text-gray-700 hover:text-red-600 transition">Desserts</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-[40vh] flex items-center">
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1513104890138-7c749659a591')] bg-cover bg-center"></div>
+        <div class="container mx-auto px-4 relative z-20 text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Menu</h1>
+            <p class="text-xl">Authentic Italian flavors at their finest</p>
+        </div>
+    </section>
+
+    <!-- Menu Sections -->
+    <div class="container mx-auto px-4 py-12">
+        <!-- Appetizers -->
+        <section id="appetizers" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Appetizers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Fries</h3>
+                    <p class="text-gray-600 mb-2">$3.49</p>
+                    <p class="text-sm text-gray-500">Add Cheese +$0.75, Jalapenos +$0.50, Bacon +$0.99</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Loaded Fries</h3>
+                    <p class="text-gray-600 mb-2">$5.99</p>
+                    <p class="text-sm text-gray-500">Baked fries with cheddar cheese, Jalapenos & Bacon</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Cheese Bread</h3>
+                    <p class="text-gray-600 mb-2">$6.99</p>
+                    <p class="text-sm text-gray-500">Oven-baked dough covered in garlic sauce and topped with mozzarella</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wings -->
+        <section id="wings" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Wings</h2>
+            <p class="text-gray-600 mb-6">Regular or Boneless. Oven Baked wings tossed in your choice of sauce: Insane, Hot, Medium, BBQ, Chipotle BBQ, Garlic Parmesan, Old Bay, Mango Habanero, Sweet Thai chili, Honey Lemon Pepper & Lemon Pepper Rub.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">8PC Wings</h3>
+                    <p class="text-gray-600">$10.99</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">16PC Wings</h3>
+                    <p class="text-gray-600">$20.99</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">24PC Wings</h3>
+                    <p class="text-gray-600">$30.99</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">50PC Wings</h3>
+                    <p class="text-gray-600">$60.99</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pizza -->
+        <section id="pizza" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Gourmet Pizza</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002" alt="Margherita Pizza" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Margherita</h3>
+                        <p class="text-gray-600 mb-2">Red sauce, tomato, basil</p>
+                        <div class="space-y-1">
+                            <p class="text-sm">12" - $13.49</p>
+                            <p class="text-sm">14" - $17.49</p>
+                            <p class="text-sm">16" - $20.49</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3" alt="Supreme Pizza" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Supreme</h3>
+                        <p class="text-gray-600 mb-2">Pepperoni, sausage, ham, ground beef, green peppers, black olives, mushrooms, onions, bacon</p>
+                        <div class="space-y-1">
+                            <p class="text-sm">12" - $13.49</p>
+                            <p class="text-sm">14" - $17.49</p>
+                            <p class="text-sm">16" - $20.49</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1594007654729-407eedc660be" alt="Veggie Lovers Pizza" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Veggie Lovers</h3>
+                        <p class="text-gray-600 mb-2">Mushroom, green peppers, onions, black olives, diced tomatoes</p>
+                        <div class="space-y-1">
+                            <p class="text-sm">12" - $13.49</p>
+                            <p class="text-sm">14" - $17.49</p>
+                            <p class="text-sm">16" - $20.49</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Hawaiian Pizza" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Hawaiian</h3>
+                        <p class="text-gray-600 mb-2">Ham, pineapple, pizza sauce</p>
+                        <div class="space-y-1">
+                            <p class="text-sm">12" - $13.49</p>
+                            <p class="text-sm">14" - $17.49</p>
+                            <p class="text-sm">16" - $20.49</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pasta -->
+        <section id="pasta" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Pasta</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Manicotti with Marinara</h3>
+                    <p class="text-gray-600">$8.99</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Ravioli with Marinara</h3>
+                    <p class="text-gray-600">$8.99</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Chicken Carbonara</h3>
+                    <p class="text-gray-600">$9.99</p>
+                    <p class="text-sm text-gray-500">Penne, bacon, chicken, onions, mushrooms and spinach</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desserts -->
+        <section id="desserts" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Desserts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Cannoli</h3>
+                    <p class="text-gray-600">1 pc $3.49 | 2 pc $6.49</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Brownie</h3>
+                    <p class="text-gray-600">1 pc $2.99 | 2 pc $5.49</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Tiramisu</h3>
+                    <p class="text-gray-600">1 pc $4.49 | 2 pc $8.49</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-bold mb-2">Chocolate Cookie</h3>
+                    <p class="text-gray-600">1 pc $2.49 | 2 pc $3.99</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Five Bros Pizza</h3>
+                    <p class="text-gray-400">Serving authentic Italian pizza since 1990</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#appetizers" class="text-gray-400 hover:text-white transition">Appetizers</a></li>
+                        <li><a href="#wings" class="text-gray-400 hover:text-white transition">Wings</a></li>
+                        <li><a href="#pizza" class="text-gray-400 hover:text-white transition">Pizza</a></li>
+                        <li><a href="#pasta" class="text-gray-400 hover:text-white transition">Pasta</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Opening Hours</h3>
+                    <p class="text-gray-400">Monday - Friday: 11am - 10pm</p>
+                    <p class="text-gray-400">Saturday - Sunday: 12pm - 11pm</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Five Bros Pizza. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 
