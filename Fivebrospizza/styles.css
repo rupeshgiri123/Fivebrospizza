@@ -6,7 +6,7 @@
 }
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #fff8f0;
+  background: #fff5f7; /* light red background */
   color: #222;
   line-height: 1.6;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-  background: #b22222;
+  background: #ff6f91; /* light red */
   color: #fff;
   padding: 1.5rem 0 1rem 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -39,7 +39,7 @@ nav a {
   transition: color 0.2s;
 }
 nav a:hover {
-  color: #ffd700;
+  color: #ffe0e6;
 }
 
 .hero {
@@ -53,7 +53,7 @@ nav a:hover {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(178,34,34,0.7);
+  background: rgba(255,111,145,0.7); /* light red overlay */
   z-index: 1;
 }
 .hero .container {
@@ -70,7 +70,7 @@ nav a:hover {
 }
 .btn {
   display: inline-block;
-  background: #ffd700;
+  background: #ffb3c6; /* lighter red/pink */
   color: #b22222;
   padding: 0.75rem 2rem;
   border-radius: 30px;
@@ -81,8 +81,8 @@ nav a:hover {
   cursor: pointer;
 }
 .btn:hover {
-  background: #b22222;
-  color: #ffd700;
+  background: #ff6f91;
+  color: #fff;
 }
 
 .menu-section {
@@ -93,7 +93,7 @@ nav a:hover {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #b22222;
+  color: #ff6f91;
 }
 .menu-list {
   display: flex;
@@ -102,7 +102,7 @@ nav a:hover {
   justify-content: center;
 }
 .menu-item {
-  background: #fff8f0;
+  background: #ffe0e6; /* very light red/pink */
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
   padding: 1.5rem;
@@ -113,6 +113,7 @@ nav a:hover {
 }
 .menu-item:hover {
   transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 4px 16px rgba(255,111,145,0.15);
 }
 .menu-item img {
   width: 100%;
@@ -124,7 +125,7 @@ nav a:hover {
 .menu-item h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  color: #b22222;
+  color: #ff6f91;
 }
 .menu-item p {
   font-size: 1rem;
@@ -132,7 +133,7 @@ nav a:hover {
 }
 .menu-item .price {
   font-weight: bold;
-  color: #b22222;
+  color: #ff6f91;
   margin-bottom: 1rem;
 }
 .menu-item button {
@@ -140,12 +141,12 @@ nav a:hover {
 }
 
 .order-section {
-  background: #fff8f0;
+  background: #fff5f7;
   padding: 3rem 0 2rem 0;
 }
 .order-section h2 {
   text-align: center;
-  color: #b22222;
+  color: #ff6f91;
   margin-bottom: 2rem;
 }
 #order-form {
@@ -168,9 +169,10 @@ nav a:hover {
 .form-group textarea {
   width: 100%;
   padding: 0.7rem;
-  border: 1px solid #ccc;
+  border: 1px solid #ffb3c6;
   border-radius: 8px;
   font-size: 1rem;
+  background: #ffe0e6;
 }
 .form-group textarea {
   min-height: 60px;
@@ -178,7 +180,7 @@ nav a:hover {
 }
 #order-success {
   text-align: center;
-  color: #388e3c;
+  color: #d72660;
   font-size: 1.2rem;
   margin-top: 1.5rem;
 }
@@ -187,7 +189,7 @@ nav a:hover {
 }
 
 footer {
-  background: #b22222;
+  background: #ff6f91;
   color: #fff;
   text-align: center;
   padding: 2rem 0 1rem 0;
