@@ -119,4 +119,18 @@ document.querySelectorAll('.menu-card').forEach(card => {
     card.addEventListener('mouseleave', function() {
         this.style.transform = 'translateY(0)';
     });
-}); 
+});
+
+// Section fade-in on scroll
+function revealSectionsOnScroll() {
+  const sections = document.querySelectorAll('section');
+  const triggerBottom = window.innerHeight * 0.92;
+  sections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+    if (sectionTop < triggerBottom) {
+      section.classList.add('visible');
+    }
+  });
+}
+window.addEventListener('scroll', revealSectionsOnScroll);
+window.addEventListener('DOMContentLoaded', revealSectionsOnScroll); 
