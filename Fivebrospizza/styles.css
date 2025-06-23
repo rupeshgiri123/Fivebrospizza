@@ -6,7 +6,7 @@
 }
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #fff5f7; /* light red background */
+  background: #87ceeb; /* sky blue background */
   color: #222;
   line-height: 1.6;
 }
@@ -141,7 +141,7 @@ nav a:hover {
 }
 
 .order-section {
-  background: #fff5f7;
+  background: #87ceeb; /* sky blue background for order section */
   padding: 3rem 0 2rem 0;
 }
 .order-section h2 {
